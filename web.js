@@ -1,8 +1,9 @@
 var express = require("express"),
-    app = express(); 
+    app = express(),
+    fs = require("fs"); 
 
 app.get('/', function(req, res) {
-  res.send('<center><h1>Under Construction.</h1>Contact Steve at 217-369-2921 for directions and time of Sunday worship service.<br>Sorry for any inconvenience as we update our site.</center>');
+  res.send(fs.readFileSync("./index.html", {encoding:"UTF-8"}));
 });
 
 var port = process.env.PORT || 8080;
