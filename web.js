@@ -3,7 +3,6 @@ var express = require('express'),
     fs = require('fs'),
     path = require('path'); 
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
 ['css', 'img', 'js'].forEach(function(dir) {
     app.use('/' + dir, express.static(__dirname + '/' + dir));
 });
