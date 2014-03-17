@@ -1,8 +1,8 @@
 var express = require("express"),
     app = express(); 
 
-app.get('/', function(request, response) {
-  response.send('Under Construction.');
+app.get('/', function(req, res) {
+  res.send('Under Construction.');
 });
 
 var port = process.env.PORT || 8080;
