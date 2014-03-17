@@ -3,11 +3,7 @@ var express = require('express'),
     fs = require('fs'),
     path = require('path'); 
 
-app.configure(function() {
-    ['css', 'img', 'js'].forEach(function(dir) {
-        app.use('/' + dir, express.static(__dirname + '/' + dir));
-    });
-});
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
   res.send(fs.readFileSync("./index.html", {encoding:"UTF-8"}));
