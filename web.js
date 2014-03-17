@@ -1,6 +1,11 @@
-var express = require("express"),
+var express = require('express'),
     app = express(),
-    fs = require("fs"); 
+    fs = require('fs'),
+    path = require('path'); 
+
+app.use(express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'js')));
+app.use(express.static(path.join(__dirname, 'images')));
 
 app.get('/', function(req, res) {
   res.send(fs.readFileSync("./index.html", {encoding:"UTF-8"}));
