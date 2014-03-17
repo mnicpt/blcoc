@@ -3,8 +3,10 @@ var express = require('express'),
     fs = require('fs'),
     path = require('path'); 
 
-['css', 'img', 'js'].forEach(function(dir) {
-    app.use('/' + dir, express.static(__dirname + '/' + dir));
+app.configure(function() {
+    ['css', 'img', 'js'].forEach(function(dir) {
+        app.use('/' + dir, express.static(__dirname + '/' + dir));
+    });
 });
 
 app.get('/', function(req, res) {
