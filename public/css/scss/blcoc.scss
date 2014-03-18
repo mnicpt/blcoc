@@ -80,7 +80,7 @@ header{
 }
 
 /* Sketchy Box */
-$box-size:220px;
+$box-size:200px;
 $sketchy-border-style:3px double #444;
 @mixin sketchy-rotation($degrees){
   -webkit-transform: rotate($degrees + deg);
