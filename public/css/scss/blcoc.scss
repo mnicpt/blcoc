@@ -23,7 +23,7 @@ header{
 }
 .logo{
     position:relative;
-    background:no-repeat url("/images/logo.png");
+    background:no-repeat url("/public/images/logo.png");
     width: 310px;
     height:120px;
     margin:10px auto 10px;
@@ -81,7 +81,7 @@ header{
 }
 
 /* Sketchy Box */
-$box-size:200px;
+$box-size:190px;
 $sketchy-border-style:3px double #444;
 @mixin sketchy-rotation($degrees){
   -webkit-transform: rotate($degrees + deg);
