@@ -14,6 +14,9 @@ html{
 .bkgrd{
     position:absolute;
     background-size:cover;
+    background-color:rgb(145, 155, 80);
+    border-top-left-radius: 500px;
+    top:140px;
     width:100%;
     height:100%;
 }
@@ -21,9 +24,12 @@ header{
     position:relative;
     width:100%;
 }
+section{
+    margin-top:20px;
+}
 .logo{
     position:relative;
-    background:no-repeat url("/images/logo.png");
+    background:no-repeat url("/public/images/logo.png");
     width: 310px;
     height:120px;
     margin:10px auto 10px;
@@ -55,8 +61,8 @@ header{
     position:relative;
     float:right;
     margin-left:20px;
-    border-left:1px solid #ddd;
-    color:rgb(145, 155, 80);
+    border-left:2px solid #fff;
+    color:white;
 
     & > li{
         margin-left:14px;
@@ -64,11 +70,11 @@ header{
     }
     & > li:hover{
         cursor:pointer;
-        color:black;
+        color:rgb(23, 40, 123);
     }
 }
 .active{
-    color:black;
+    color:rgb(23, 40, 123);
 }
 .section_img{
     position:relative;
@@ -81,8 +87,8 @@ header{
 }
 
 /* Sketchy Box */
-$box-size:190px;
-$sketchy-border-style:3px double #444;
+$box-size:215px;
+$sketchy-border-style:3px double white;
 @mixin sketchy-rotation($degrees){
   -webkit-transform: rotate($degrees + deg);
   -moz-transform: rotate($degrees + deg);
@@ -93,6 +99,7 @@ $sketchy-border-style:3px double #444;
   box-sizing:border-box;
   display:inline-block;
   padding:5px;
+  left:-25px;
   width:$box-size;
   height:$box-size;
   
