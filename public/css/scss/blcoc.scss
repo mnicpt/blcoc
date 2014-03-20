@@ -1,6 +1,7 @@
 @import "../css/grid.css";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
+$env:unquote("/");
 $phone-portrait:320px;
 $phone-landscape:568px;
 $tablet-portrait:768px;
@@ -21,6 +22,11 @@ html {
     background-size: cover;
     background-color: rgb(145, 155, 80);
     border-top-left-radius: 500px;
+    
+    @media screen and (min-width: $phone-landscape) {
+        border-top-left-radius:1000px;
+    }
+    
     top: 160px;
     width: 100%;
     height: 100%;
@@ -34,7 +40,7 @@ section {
 }
 .logo {
     position: relative;
-    background: no-repeat url("/images/logo.png");
+    background: no-repeat url("$env/images/logo.png");
     width: 310px;
     height: 120px;
     margin: 10px auto 10px;
