@@ -90,7 +90,6 @@ section:after {
 .section_img {
     position: relative;
     margin-bottom: 20px;
-    //background-color: rgba(208, 223, 108, 1.0);
     background:no-repeat url("/images/oneforall.jpg");
 }
 .section_info {
@@ -100,7 +99,7 @@ section:after {
 /* Sketchy Box */
 
 $box-size:215px;
-$sketchy-border-style:3px double white;
+$sketchy-border-style:3px double rgb(23, 40, 123);;
 @mixin sketchy-rotation($degrees) {
     -webkit-transform: rotate($degrees + deg);
     -moz-transform: rotate($degrees + deg);
