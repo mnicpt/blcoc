@@ -39,7 +39,7 @@ section {
 }
 .logo {
     position: relative;
-    background: no-repeat url("/images/logo.png");
+    background: no-repeat url("/public/images/logo.png");
     width: 310px;
     height: 120px;
     margin: 10px auto 10px;
@@ -74,13 +74,24 @@ section:after {
     float: right;
     margin-left: 20px;
     border-left: 2px solid #fff;
-    color: white;
+    color:white;
+
     & > li {
         margin-left: 14px;
         margin-top: 20px;
-    }
-    & > li:hover {
-        cursor: pointer;
+        
+        &:hover {
+            cursor: pointer; 
+            color: rgb(23, 40, 123);
+        }
+    }  
+}
+a {
+    text-decoration: none;
+    color:white;
+
+    &:hover {
+        text-decoration: none;
         color: rgb(23, 40, 123);
     }
 }
