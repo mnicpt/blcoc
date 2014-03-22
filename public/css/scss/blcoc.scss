@@ -42,7 +42,7 @@ section {
     margin-top: 20px;
 }
 .logo {
-    position: relative;
+    position: fixed;
     background: no-repeat url("/images/logo.png");
     width: 310px;
     height: 120px;
@@ -91,12 +91,12 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: rgb(23, 40, 123);
+        //color: rgb(23, 40, 123);
         cursor:pointer;
     }
 }
 .active {
-    color: rgb(23, 40, 123);
+    //color: rgb(23, 40, 123);
 }
 .section_img {
     position: relative;
@@ -105,11 +105,7 @@ a {
 .section_info {
     position: relative;
     text-align: justify;
-    
-    @media screen and (min-width: $phone-landscape) {
-        width:80%;
-        margin:0 auto;
-    }
+    color:white;
 }
 /* Sketchy Box */
 
@@ -120,7 +116,7 @@ $sketchy-border-style:3px double #ccc;
     -moz-transform: rotate($degrees + deg);
 }
 .box {
-    position: relative;
+    position: fixed;
     box-sizing: border-box;
     display: inline-block;
     padding: 5px;
