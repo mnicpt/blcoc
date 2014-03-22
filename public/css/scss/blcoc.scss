@@ -105,6 +105,10 @@ a {
 .section_info {
     position: relative;
     text-align: justify;
+    
+    @media screen and (min-width: $phone-landscape) {
+        width:80%;
+    }
 }
 /* Sketchy Box */
 
