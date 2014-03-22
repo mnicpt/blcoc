@@ -103,10 +103,6 @@ a {
     position: relative;
     text-align: justify;
     width:300px;
-    
-    @media screen and (min-width: $phone-landscape) {
-        width:548px;
-    }
 }
 /* Sketchy Box */
 
