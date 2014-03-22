@@ -20,7 +20,7 @@ body{
     -webkit-text-size-adjust:100%;
 }
 .bkgrd {
-    position: fixed;
+    position: absolute;
     background-size: cover;
     background-color: rgb(145, 155, 80);
     border-top-left-radius: 500px;
@@ -42,7 +42,7 @@ section {
     margin-top: 20px;
 }
 .logo {
-    position: fixed;
+    position: relative;
     background: no-repeat url("/images/logo.png");
     width: 310px;
     height: 120px;
@@ -116,7 +116,7 @@ $sketchy-border-style:3px double #ccc;
     -moz-transform: rotate($degrees + deg);
 }
 .box {
-    position: fixed;
+    position: relative;
     box-sizing: border-box;
     display: inline-block;
     padding: 5px;
