@@ -8,7 +8,7 @@ $tablet-landscape:1024px;
 
  * {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 17px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ html {
     border-top-left-radius: 500px;
     top: 160px;
     width: 100%;
-    height: 150%;
+    height: 100%;
     
     @media screen and (min-width: $phone-landscape) {
         border-top-left-radius:800px;
@@ -104,7 +104,7 @@ a {
 }
 .section_info {
     position: relative;
-    text-align: justify;
+    //text-align: justify;
 }
 /* Sketchy Box */
 
@@ -181,7 +181,7 @@ footer {
     bottom: 0;
     background: #aaa;
     color: #141c5f;
-    font-size: .75em;
+    font-size: 12px;
     padding: 10px 0;
     text-align: center;
     box-shadow: inset 0px 1px 1px #000;
