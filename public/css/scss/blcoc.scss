@@ -20,7 +20,7 @@ body{
     -webkit-text-size-adjust:100%;
 }
 .bkgrd {
-    position: absolute;
+    position: fixed;
     background-size: cover;
     background-color: rgb(145, 155, 80);
     border-top-left-radius: 500px;
