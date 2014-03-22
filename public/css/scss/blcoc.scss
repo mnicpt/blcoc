@@ -102,7 +102,11 @@ a {
 .section_info {
     position: relative;
     text-align: justify;
-    zoom:1;
+    width:300px;
+    
+    @media screen and (min-width: $phone-landscape) {
+        width:548px;
+    }
 }
 /* Sketchy Box */
 
