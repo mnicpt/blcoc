@@ -40,7 +40,7 @@ section {
 }
 .logo {
     position: relative;
-    background: no-repeat url("/images/logo.png");
+    background: no-repeat url("/public/images/logo.png");
     width: 310px;
     height: 120px;
     margin: 10px auto 10px;
@@ -80,11 +80,6 @@ section:after {
     & > li {
         margin-left: 14px;
         margin-top: 20px;
-        
-        &:hover {
-            cursor: pointer; 
-            color: rgb(23, 40, 123);
-        }
     }  
 }
 a {
@@ -94,6 +89,7 @@ a {
     &:hover {
         text-decoration: none;
         color: rgb(23, 40, 123);
+        cursor:pointer;
     }
 }
 .active {
@@ -106,7 +102,6 @@ a {
 .section_info {
     position: relative;
     text-align: justify;
-    font-size:17px;
 }
 /* Sketchy Box */
 
