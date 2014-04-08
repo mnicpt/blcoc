@@ -5,9 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name = "viewport" content = "initial-scale = 1.0">
 
-<link href="/css/blcoc.min.css" type="text/css" rel="stylesheet" />
+<link href="/public/css/blcoc.min.css" type="text/css" rel="stylesheet" />
 
 <title>Bloomington Church of Christ</title>
 </head>
@@ -20,21 +21,10 @@
     </header>
 	<div class="page_wrapper">
         <section>
-            <div class="container main sketchy box">
+            <div class="container sketchy box">
                 <div class="section_img content">
-                    <img src="/images/oneforall.jpg" width="100%" height="100%"></img>
+                    <img src="/public/images/oneforall.jpg" width="100%" height="100%"></img>
                 </div>
-            </div>
-            <div class="container">
-                <ul class="links">
-                    <li class="no_bullet"></li>
-                    <li class="active"><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Sermon</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Family Groups</a></li>
-                    <li class="no_bullet"></li>
-                </ul>
             </div>
         </section>
 
@@ -46,14 +36,37 @@
             </div>
         </section>
     </div>
+    <div class="tabbar">
+        <div class="tabitem">
+            <div class="icon"><img src="/public/images/home.svg" width="50px" height="50px"></img></div>
+            <div class="label">Home</div>
+        </div>
+        <div class="tabitem">
+            <div class="icon"><img src="/public/images/about.svg" width="48px" height="50px"></img></div>
+            <div class="label">About</div>
+        </div>
+        <div class="tabitem">
+            <div class="icon"><img src="/public/images/events.svg" width="50px" height="50px"></img></div>
+            <div class="label">Events</div>
+        </div>
+        <div class="tabitem">
+            <div class="icon"><img src="/public/images/programs.svg" width="45px" height="50px"></img></div>
+            <div class="label">Programs</div>
+        </div>
+        <div class="tabitem">
+            <div class="icon"><img src="/public/images/groups.svg" width="50px" height="50px"></img></div>
+            <div class="label">Groups</div>
+        </div>
+        <div class="blur"></div>
+    </div>
     <footer>
-        &copy;2014 Bloomington Church of Christ
         <div class="facebook">FB</div>
+        &copy;2014 Bloomington Church of Christ
         <div class="twitter">TW</div>
     </footer>
 	<!--
 	<script type="text/javascript" src="public/js/blcoc.min.js"></script> -->
-	<script type="application/javascript" src="/js/fastclick.js"></script>
+	<script type="/public/application/javascript" src="/js/fastclick.js"></script>
 
     <script>
         window.addEventListener('load', function() {
