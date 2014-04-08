@@ -100,7 +100,7 @@ $sketchy-border-style:3px double #ccc;
         height:$box-size-height + 115px;
     }
     .content {
-        top: 6px;
+        top: 0px;
         left: 2px;
         width: $box-size-width - 14px;
         height: $box-size-height - 20px;
@@ -168,6 +168,7 @@ $sketchy-border-style:3px double #ccc;
     cursor:pointer;
     float:left;
     width:20%;
+    z-index:2;
     
     .icon{
         margin-top:7px;
