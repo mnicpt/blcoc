@@ -24,7 +24,7 @@ body{
     position: absolute;
     background-size: cover;
     background-color: rgb(145, 155, 80);
-    border-top-left-radius: 500px;
+    border-top-left-radius: 400px;
     top: 28%;
     width: 100%;
     height: 128%;
@@ -100,7 +100,7 @@ $sketchy-border-style:3px double #ccc;
         height:$box-size-height + 115px;
     }
     .content {
-        top: 0px;
+        top: 6px;
         left: 2px;
         width: $box-size-width - 14px;
         height: $box-size-height - 20px;
