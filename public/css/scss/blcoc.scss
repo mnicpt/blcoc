@@ -173,8 +173,11 @@ $sketchy-border-style:3px double #ccc;
         height:100%;
     }
     .label{
+        position:absolute;
+        width:100%;
+        bottom:3px;
         font-size:12px;
-        text-align:center;
+        margin:0 auto;
     }
 }
 footer {
