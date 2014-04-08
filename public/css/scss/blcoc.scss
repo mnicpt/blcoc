@@ -167,17 +167,14 @@ $sketchy-border-style:3px double #ccc;
     width:20%;
     
     .icon{
-        display:block;
         padding-top:5px;
         text-align:center;
+        height:30px;
     }
     .label{
-        position:absolute;
-        display:block;
-        bottom:0;
         font-size:12px;
         width:100%;
-        margin:0 3%;
+        text-align:center;
     }
 }
 footer {
