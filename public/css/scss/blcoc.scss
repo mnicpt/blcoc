@@ -24,7 +24,7 @@ body{
     position: absolute;
     background-size: cover;
     background-color: rgb(145, 155, 80);
-    border-top-left-radius: 300px;
+    border-top-left-radius: 500px;
     top: 28%;
     width: 100%;
     height: 128%;
@@ -58,7 +58,7 @@ section {
 .page_wrapper {
     position: relative;
     width: 90%;
-    margin: 20px 5%;
+    margin: 10px 5%;
     padding-bottom: 45px;
 }
 .page_wrapper:after,
@@ -160,7 +160,7 @@ $sketchy-border-style:3px double #ccc;
         height:100%;
         filter:blur(1px);
         -webkit-filter:blur(1px);
-        z-index:1;
+        z-index:0;
     }
 }
 .tabitem{
@@ -168,7 +168,6 @@ $sketchy-border-style:3px double #ccc;
     cursor:pointer;
     float:left;
     width:20%;
-    z-index:100;
     
     .icon{
         margin-top:7px;
