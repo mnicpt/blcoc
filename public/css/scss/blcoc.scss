@@ -44,7 +44,11 @@ section {
 }
 .logo {
     position: relative;
-    margin: 10px 5% 10px;
+    
+    
+    img{
+       margin: 10px 5% 10px; 
+    }
 }
 .transparency {
     position: absolute;
