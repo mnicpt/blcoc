@@ -81,7 +81,7 @@ section:after {
 .section_info {
     position: relative;
     color:white;
-    padding-left:10px;
+    padding-top:10px;
 }
 /* Sketchy Box */
 
@@ -97,6 +97,7 @@ $sketchy-border-style:3px double #ccc;
     box-sizing: border-box;
     display: inline-block;
     padding: 5px;
+    top:-10px;
     width:$box-size-width;
     height:$box-size-height;
     
