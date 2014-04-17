@@ -80,12 +80,7 @@
 
     <script>
         $(function() {
-            var $tabItem = $('.tabitem');
-            FastClick.attach($tabItem.get(0));
-            FastClick.attach($tabItem.get(1));
-            FastClick.attach($tabItem.get(2));
-            FastClick.attach($tabItem.get(3));
-            FastClick.attach($tabItem.get(4));
+            FastClick.attach(document.body);
         });
         
         $('.tabitem').on('click', function(){
