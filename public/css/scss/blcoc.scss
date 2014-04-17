@@ -52,7 +52,7 @@ a{
 .page_wrapper {
     position: relative;
     background-color:rgb(145, 155, 80);
-    border-top-left-radius: 250px;
+    border-top-left-radius: 300px;
     padding:0px 15px 45px;
     margin-top:20px;
     z-index:2;
@@ -71,6 +71,7 @@ section:after {
 }
 .section_info {
     position: relative;
+    padding-top:10px;
     color:white;
 }
 /* Sketchy Box */
