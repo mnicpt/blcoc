@@ -171,6 +171,7 @@ $sketchy-border-style:3px double #ccc;
     float:left;
     width:20%;
     z-index:5;
+    -webkit-tap-highlight-color:rgb(0,0,0);
     
     &.active{
         color:rgb(164, 52, 38);
@@ -209,6 +210,6 @@ footer {
 .indent-5{
     text-indent: 5px;
 }
-.indent-20{
-    text-indent: 20px;
+.indent-25{
+    text-indent: 25px;
 }
