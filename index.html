@@ -83,7 +83,7 @@
             FastClick.attach(document.body);
         });
         
-        $('.tabbar').on('click', '.tabitem', function(){
+        $('body').on('click', '.tabitem', function(){
             $('.tabitem').removeClass('active');
             $(this).addClass('active');
         });
