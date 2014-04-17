@@ -78,9 +78,9 @@
 	<script type="/application/javascript" src="/js/fastclick.js"></script>
 
     <script>
-        window.addEventListener('load', function() {
+        $(function() {
             FastClick.attach(document.body);
-        }, false);
+        });
         
         $('.tabitem').on('click', function(){
             $('.tabitem').removeClass('active');
