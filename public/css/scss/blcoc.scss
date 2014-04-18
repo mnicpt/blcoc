@@ -51,7 +51,10 @@ a{
 }
 .page_wrapper {
     position: relative;
+    box-shadow: inset 5px 5px 10px #777;
     background-color:rgb(145, 155, 80);
+    border-top-color:#aaa;
+    border-left-color:#aaa;
     border-top-left-radius: 300px;
     padding:0px 15px 45px;
     margin-top:20px;
@@ -213,8 +216,8 @@ footer {
 }
 .indent-5{
     text-indent: 5px;
-}.indent-15{
-    text-indent: 15px;
+}.indent-10{
+    text-indent: 10px;
 }
 .indent-25{
     text-indent: 25px;
