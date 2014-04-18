@@ -84,7 +84,7 @@
             FastClick.attach(document.body);
         });
         
-        $('.tabitem').on('touchstart click', function(){
+        $('.tabitem').on('touchstart', function(){
             $('.tabitem').removeClass('active');
             $(this).addClass('active');
         });
