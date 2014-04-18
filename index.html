@@ -84,7 +84,7 @@
             FastClick.attach(document.body);
         });
         
-        $('body').on('click', '.tabitem', function(){
+        $('.tabitem').on('click', '.tabitem', function(){
             $('.tabitem').removeClass('active');
             $(this).addClass('active');
         });
