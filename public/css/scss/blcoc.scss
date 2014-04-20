@@ -37,6 +37,7 @@ a{
 }
 .logo {
     position: fixed;
+    top:10px;
     
     img{
        margin: 0px 15% 10px; 
@@ -54,7 +55,7 @@ a{
     border-top-left-radius: 300px;
     border:1px 0 0 1px solid #555;
     box-shadow: inset 1px 1px 20px #555;
-    padding:0px 15px 49px;
+    padding:250px 15px 49px;
     margin-top:20px;
     z-index:2;
 }
