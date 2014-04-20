@@ -52,7 +52,7 @@ a{
     position: relative;
     background-color:rgb(145, 155, 80);
     border-top-left-radius: 300px;
-    border-bottom-right-radius: -100px;
+    border-bottom-right-radius: -300px;
     border:1px 0 0 1px solid #555;
     box-shadow: inset 1px 1px 20px #555;
     padding:0px 15px 45px;
@@ -81,7 +81,7 @@ section:after {
 
 $box-size-width:300px;
 $box-size-height:170px;
-$sketchy-border-style:3px double #ccc;
+$sketchy-border-style:3px double #aaa;
 @mixin sketchy-rotation($degrees) {
     -webkit-transform: rotate($degrees + deg);
     -moz-transform: rotate($degrees + deg);
