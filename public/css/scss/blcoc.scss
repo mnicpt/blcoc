@@ -52,9 +52,9 @@ a{
     position: relative;
     background-color:rgb(145, 155, 80);
     border-top-left-radius: 300px;
-    border-bottom-right-radius: -300px;
-    border:1px 0 0 1px #111;
-    box-shadow: inset 1px 1px 20px #777;
+    border-bottom-right-radius: -100px;
+    border:1px 0 0 1px solid #555;
+    box-shadow: inset 1px 1px 20px #555;
     padding:0px 15px 45px;
     margin-top:20px;
     z-index:2;
