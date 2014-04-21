@@ -84,9 +84,26 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <script>
+        var env = "dev",
+            env_path = "dev" ? "/public" : ""; 
+        
         $(function() {
             FastClick.attach(document.body);
         });
+        
+        $(window).load(function(){  
+            var $img = $('img'),
+                $link = $('link');
+                
+            $link.each(function() {
+                $link = $(this);
+                $link.attr('href', env_path + $link.attr('href')); 
+            }); 
+            $img.each(function() {
+                $img = $(this);
+                $img.attr('src', env_path + $img.attr('src'));
+            });
+        }); 
         
         $('.tabitem').on('touchstart', function(){
             $('.tabitem').removeClass('active');
