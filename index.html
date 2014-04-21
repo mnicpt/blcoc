@@ -85,7 +85,7 @@
 
     <script>
         var env = "prod",
-            env_path = "dev" ? "/public" : ""; 
+            env_path = env == "dev" ? "/public" : ""; 
         
         $(function() {
             FastClick.attach(document.body);
