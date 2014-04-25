@@ -185,8 +185,12 @@ $sketchy-border-style:3px double #aaa;
     }
     
     a{
-       color:rgb(101, 109, 55);
+        position:absolute;
+        color:rgb(101, 109, 55);
         text-decoration:none;
+        width:100%;
+        height:100%;
+        left:0;
     }
     
     .icon{
