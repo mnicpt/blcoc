@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="blcoc">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,7 +13,11 @@
 <link href="/css/blcoc.min.css" type="text/css" rel="stylesheet" />
 
 <script src="/js/fastclick.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-resource.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.min.js"></script>
 
+<script type="text/javascript" src="/public/js/blcoc.js"></script>
 
 <title>Bloomington Church of Christ</title>
 </head>
@@ -31,23 +35,8 @@
     </div>
 	<div class="page_wrapper">
         <section>
-            <div class="section_info cell">
-                <p>
-                    <div class="indent-25">Looking for a church in Bloomington - 
-                        <div class="indent-15">Normal? The Bloomington Church of 
-                        <div class="indent-5">Christ is a Bible-based, Christ-centered, 
-                        family-focused community of believers. We are learning and practicing the truth about Jesus: 
-                        <strong>all for one and one for all!</strong> 
-                        We all live for one (Christ), because we are convinced that one died for all.<br /> 
-                        (2 Corinthians 5:14-15)
-                    </div></div></div>
-                </p>
-                <br />
-                <p>
-                    Join us at 10 a.m. for worship on Sundays, with engaging music, practical preaching, and children's         
-                    classes. You can also get involved in dynamic family groups for all walks of life, community service
-                    opportunities, and personal Bible studies.  We can't wait to meet you!
-                </p>
+            <div class="section_info cell" ng-view>
+                
             </div>
         </section>
     </div>
@@ -56,35 +45,32 @@
     </footer>
     <div class="tabbar">
         <div class="blur"></div>
-        <div class="tabitem active">
-            <div class="icon"><i class="fa fa-home fa-lg"></i></div>
+        <div class="tabitem home active">
+            <div class="icon"><a href="/home" class="fa fa-home fa-lg"></a></div>
             <div class="label">Home</div>
         </div>
-        <div class="tabitem">
-            <div class="icon"><i class="fa fa-question-circle fa-lg"></i></div>
+        <div class="tabitem about">
+            <div class="icon"><a href="/about" class="fa fa-question-circle fa-lg"></a></div>
             <div class="label">About</div>
         </div>
-        <div class="tabitem">
-            <div class="icon"><i class="fa fa-calendar-o fa-lg"></i></div>
+        <div class="tabitem events">
+            <div class="icon"><a href="/events" class="fa fa-calendar-o fa-lg"></a></div>
             <div class="label">Events</div>
         </div>
-        <div class="tabitem">
-            <div class="icon"><i class="fa fa-book fa-lg"></i></div>
+        <div class="tabitem programs">
+            <div class="icon"><a href="programs" class="fa fa-book fa-lg"></a></div>
             <div class="label">Programs</div>
         </div>
-        <div class="tabitem">
-            <div class="icon"><i class="fa fa-users fa-lg"></i></div>
+        <div class="tabitem groups">
+            <div class="icon"><a href="groups" class="fa fa-users fa-lg"></a></div>
             <div class="label">Groups</div>
         </div>
     </div>
     
-	<!--
-	<script type="text/javascript" src="public/js/blcoc.min.js"></script> -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <script>
-        var env = "prod",
+        var env = "dev",
             env_path = env == "dev" ? "/public" : ""; 
         
         $(function() {
@@ -105,9 +91,21 @@
             });
         }); 
         
-        $('.tabitem').on('touchstart', function(){
+        $('.tabitem').on('touchstart click', function(){
             $('.tabitem').removeClass('active');
-            $(this).addClass('active');
+            
+            var $selectedTab = $(this);
+            $selectedTab.addClass('active');
+        });
+        
+        $(window).on('hashchange popstate', function(){
+            $('.tabitem').removeClass('active');
+            
+            var path = location.pathname.substring(1);
+            if (path == "") {
+                path = "home";
+            }
+            $('.tabitem.' +path).addClass('active');
         });
     </script>
 </body>

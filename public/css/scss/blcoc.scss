@@ -32,7 +32,7 @@ section {
     }
 }
 a{
-  -webkit-tap-highlight-color:rgba(0,0,0,0);  
+    -webkit-tap-highlight-color:rgba(0,0,0,0); 
 }
 .logo {
     position: relative;
@@ -177,6 +177,15 @@ $sketchy-border-style:3px double #aaa;
 
     &.active{
         color:rgb(164, 52, 38);
+        
+        a{
+           color:rgb(164, 52, 38); 
+        }
+    }
+    
+    a{
+       color:rgb(101, 109, 55);
+        text-decoration:none;
     }
     
     .icon{
