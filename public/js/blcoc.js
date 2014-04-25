@@ -1,7 +1,7 @@
 angular.module('blcoc', ['ngRoute'])
 
 .config(function($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode(false);
+  $locationProvider.html5Mode(true);
   $routeProvider
     .when('/home', {
       controller:'HomeCtrl',
