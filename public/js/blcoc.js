@@ -24,8 +24,7 @@ angular.module('blcoc', ['ngRoute'])
       templateUrl:'groups.html'
     })
     .otherwise({
-      controller:'HomeCtrl',
-      templateUrl:'home.html'
+      redirect:'/'
     });
 })
 
