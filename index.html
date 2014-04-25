@@ -38,23 +38,23 @@
     <div class="tabbar">
         <div class="blur"></div>
         <div class="tabitem home active">
-            <div class="icon"><a href="/home" class="fa fa-home fa-lg"></a></div>
+            <div class="icon"><a ng-href="/home" class="fa fa-home fa-lg"></a></div>
             <div class="label">Home</div>
         </div>
         <div class="tabitem about">
-            <div class="icon"><a href="/about" class="fa fa-question-circle fa-lg"></a></div>
+            <div class="icon"><a ng-href="/about" class="fa fa-question-circle fa-lg"></a></div>
             <div class="label">About</div>
         </div>
         <div class="tabitem events">
-            <div class="icon"><a href="/events" class="fa fa-calendar-o fa-lg"></a></div>
+            <div class="icon"><a ng-href="/events" class="fa fa-calendar-o fa-lg"></a></div>
             <div class="label">Events</div>
         </div>
         <div class="tabitem programs">
-            <div class="icon"><a href="/programs" class="fa fa-book fa-lg"></a></div>
+            <div class="icon"><a ng-href="/programs" class="fa fa-book fa-lg"></a></div>
             <div class="label">Programs</div>
         </div>
         <div class="tabitem groups">
-            <div class="icon"><a href="groups" class="fa fa-users fa-lg"></a></div>
+            <div class="icon"><a ng-href="groups" class="fa fa-users fa-lg"></a></div>
             <div class="label">Groups</div>
         </div>
     </div>
@@ -88,7 +88,7 @@
             });
         }); 
         
-        $('.tabitem').on('touchstart', function(){
+        $('.tabitem').on('touchstart click', function(){
             $('.tabitem').removeClass('active');
             
             var $selectedTab = $(this);
