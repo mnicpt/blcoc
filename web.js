@@ -6,7 +6,7 @@ var express = require('express'),
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.send(fs.readFileSync("./index.html", {encoding:"UTF-8"}));
+  res.send(fs.readFileSync("./pages/index.html", {encoding:"UTF-8"}));
 });
 
 var port = process.env.PORT || 8080;
