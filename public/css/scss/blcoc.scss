@@ -71,81 +71,13 @@ section:after {
 }
 .section_info {
     position: relative;
-    padding: 163px 0 25px 5px;
+    padding: 173px 0 25px 5px;
     color:white;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
     height:380px;
 }
-/* Sketchy Box */
 
-$box-size-width:300px;
-$box-size-height:170px;
-$sketchy-border-style:3px double #aaa;
-@mixin sketchy-rotation($degrees) {
-    -webkit-transform: rotate($degrees + deg);
-    -moz-transform: rotate($degrees + deg);
-}
-.box {
-    position: absolute;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 5px;
-    margin:0 10px;
-    width:$box-size-width;
-    height:$box-size-height;
-    z-index:10;
-    
-    @media screen and (min-width: $phone-landscape) {
-        width:$box-size-width + 115px;
-        height:$box-size-height + 115px;
-    }
-    .content {
-        top: 6px;
-        left: 2px;
-        width: $box-size-width - 14px;
-        height: $box-size-height - 20px;
-        
-        @media screen and (min-width: $phone-landscape) {
-            width:$box-size-width + 115px - 14px;
-            height:$box-size-height + 115px - 20px;
-        }
-        overflow: hidden;
-        @include sketchy-rotation(-1);
-    }
-}
-.sketchy:before {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: $box-size-width - 12px;
-    height: $box-size-height - 4px;
-    
-    @media screen and (min-width: $phone-landscape) {
-        width:$box-size-width + 115px - 12px;
-        height:$box-size-height + 115px - 4px;
-    }
-    border-left: $sketchy-border-style;
-    border-right: $sketchy-border-style;
-    @include sketchy-rotation(-1);
-    content: "";
-}
-.sketchy:after {
-    position: absolute;
-    top: 8px;
-    left: 1px;
-    width: $box-size-width - 2px;
-    height: $box-size-height - 20px;
-    
-    @media screen and (min-width: $phone-landscape) {
-        width:$box-size-width + 115px - 2px;
-        height:$box-size-height + 115px - 20px;
-    }
-    border-top: $sketchy-border-style;
-    border-bottom: $sketchy-border-style;
-    @include sketchy-rotation(-1);
-    content: "";
-}
 .tabbar{
     position:fixed;
     background-color:rgba(255, 255, 255, 1.0);
@@ -238,7 +170,7 @@ footer {
 
 .sub_pages header{
     background-color:white;
-    height:50px;
+    height:112px;
 }
 .sub_pages .page_wrapper{
     border-radius:0;
