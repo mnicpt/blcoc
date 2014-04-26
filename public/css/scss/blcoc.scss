@@ -68,14 +68,14 @@ section:after {
 .section_img {
     position:absolute;
     float:left;
-    transform:rotate(-5deg);
-    -webkit-transform:rotate(-5deg);
+    transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
     margin-bottom: 20px;
     z-index:3;
 }
 .section_info {
     position: relative;
-    padding: 173px 0 25px 5px;
+    padding: 193px 0 25px 5px;
     color:white;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
