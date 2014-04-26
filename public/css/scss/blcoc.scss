@@ -66,12 +66,14 @@ section:after {
     clear: both;
 }
 .section_img {
+    position:relative;
     float:left;
     margin-bottom: 20px;
+    z-index:3;
 }
 .section_info {
     position: relative;
-    padding: 173px 0 25px 5px;
+    padding: 73px 0 25px 5px;
     color:white;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
