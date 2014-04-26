@@ -68,8 +68,8 @@ section:after {
 .section_img {
     position:absolute;
     float:left;
-    transform:rotate(15deg);
-    -webkit-transform:rotate(15deg);
+    transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
     margin-bottom: 20px;
     z-index:3;
 }
@@ -79,7 +79,7 @@ section:after {
     color:white;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
-    height:395px;
+    height:400px;
 }
 
 .tabbar{
