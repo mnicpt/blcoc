@@ -3,25 +3,34 @@ angular.module('blcoc', ['ngRoute'])
 .config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $routeProvider
+    .when('/home', {
+      controller:'HomeCtrl',
+      templateUrl:'./home.html'
+    })
     .when('/about', {
       controller:'AboutCtrl',
-      templateUrl:'about.html'
+      templateUrl:'./about.html'
     })
     .when('/events', {
       controller:'EventsCtrl',
-      templateUrl:'events.html'
+      templateUrl:'./events.html'
     })
     .when('/programs', {
       controller:'ProgramsCtrl',
-      templateUrl:'programs.html'
+      templateUrl:'./programs.html'
     })
     .when('/groups', {
       controller:'GroupsCtrl',
-      templateUrl:'groups.html'
+      templateUrl:'./groups.html'
     })
     .otherwise({
-      redirect:'/'
+      controller:'HomeCtrl',
+      templateUrl:'./home.html'
     });
+})
+
+.controller('HomeCtrl', function($scope) {
+    
 })
 
 .controller('AboutCtrl', function($scope) {
