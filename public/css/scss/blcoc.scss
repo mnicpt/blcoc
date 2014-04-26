@@ -172,10 +172,15 @@ footer {
     text-indent: 25px;
 }
 
-.sub_pages header{
-    background-color:white;
-    height:100px;
-}
-.sub_pages .page_wrapper{
-    border-radius:0;
+.sub_pages{
+    header{
+        background-color:white;
+        height:100px;
+    }
+    .page_wrapper{
+        border-radius:0;
+    }
+    .section-info{
+        padding: 25px 0 25px 5px;
+    }
 }
