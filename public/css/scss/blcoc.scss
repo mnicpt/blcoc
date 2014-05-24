@@ -1,4 +1,5 @@
 @import "../css/grid.css";
+@import "../scss/event.scss";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
 $phone-portrait:320px;
@@ -55,6 +56,7 @@ a{
     border-right:0;
     box-shadow: inset 1px 1px 20px #555;
     padding:0px 15px 0;
+    height:450px;
     z-index:2;
 }
 .page_wrapper:after,
@@ -75,11 +77,11 @@ section:after {
 }
 .section_info {
     position: relative;
-    padding: 193px 0 25px 5px;
+    padding: 180px 0 25px 5px;
     color:white;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
-    height:400px;
+    height: 450px;
 }
 
 .tabbar{
