@@ -30,9 +30,12 @@ angular.module('blcoc', ['ngRoute'])
 })
 
 .controller('HomeCtrl', function($scope) {
-    $scope.time() = function() {
+    $scope.time = function() {
         alert("Church service is at 10 a.m. on Sundays.");
-    }
+    };
+    $scope.location = function() {
+        alert("We are located at 1540 LandMark Mall just west of Kroger and next to the Music Shoppe.");
+    };
 })
 
 .controller('AboutCtrl', function($scope) {
