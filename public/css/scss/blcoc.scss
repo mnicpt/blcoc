@@ -177,7 +177,31 @@ footer {
 .indent-25{
     text-indent: 25px;
 }
-
+.contact{
+    position:absolute;
+    width:70px;
+    right:15px;
+    top:15px;
+}
+#time, #location, #phone, #email{
+   display:block;
+   margin:15px;
+   text-align:center;
+}
+.fa{
+    &.fa-clock-o{
+        color:$green;
+    }
+    &.fa-map-marker{
+        color:$red;
+    }
+    &.fa-phone{
+        color:$orange;
+    }
+    &.fa-envelope-o{
+        color:$blue;
+    }
+}
 .sub_pages{
     header{
         background-color:white;
