@@ -18,11 +18,11 @@ $tablet-landscape:1024px;
     display: none; 
 }
 html {
-    background: transparent;
     height: 100%;
 }
 body{
-    background: transparent;
+    position:relative;
+    margin-top:20px;
     -webkit-text-size-adjust:100%;
     overflow: hidden;
 }
