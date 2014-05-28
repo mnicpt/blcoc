@@ -23,7 +23,7 @@ html {
 body{
     -webkit-text-size-adjust:100%;
     overflow: hidden;
-    padding-top:20px;
+    border-top:1px solid red;
 }
 header {
     position: relative;
@@ -182,7 +182,7 @@ footer {
     position:absolute;
     width:70px;
     right:0px;
-    top:0px;
+    top:5px;
     z-index:101;
 }
 #time, #location, #phone, #email{
