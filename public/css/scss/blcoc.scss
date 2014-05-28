@@ -19,11 +19,11 @@ $tablet-landscape:1024px;
 }
 html {
     height: 100%;
+    top:20px;
 }
 body{
     -webkit-text-size-adjust:100%;
     overflow: hidden;
-    top:20px;
 }
 header {
     position: relative;
