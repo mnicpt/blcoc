@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="white">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 <link href="/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
@@ -16,10 +16,15 @@
 
 <body>
     <div class="contact">
-      <div id="time" class="fa fa-clock-o fa-lg"></div>
-      <div id="location" class="fa fa-map-marker fa-lg"></div>
-      <div id="phone" class="fa fa-phone fa-lg"></div>
-      <div id="email" class="fa fa-envelope-o fa-lg"></div>
+      <div id="time" class="fa fa-clock-o fa-lg" ng-click="time()"></div>
+      <div id="location" class="fa fa-map-marker fa-lg" ng-click="location()"></div>
+      <div id="phone" class="fa fa-phone fa-lg" ng-click="phone"></div>
+      <div id="email" class="fa fa-envelope-o fa-lg" ng-click="email"></div>
+    </div>
+    <div class="modal">
+        <div class="header"></div>
+        <div class="content"></div>
+        <div class="footer"></div>
     </div>
     <div ng-view>
 

@@ -30,7 +30,9 @@ angular.module('blcoc', ['ngRoute'])
 })
 
 .controller('HomeCtrl', function($scope) {
-    
+    $scope.time() = function() {
+        alert("Church service is at 10 a.m. on Sundays.");
+    }
 })
 
 .controller('AboutCtrl', function($scope) {
