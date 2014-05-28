@@ -36,6 +36,12 @@ angular.module('blcoc', ['ngRoute'])
     $scope.location = function() {
         alert("We are located at 1540 LandMark Mall just west of Kroger and next to the Music Shoppe.");
     };
+    $scope.email = function() {
+        window.location.href = "mailto:mnicpt@gmail.com?subject=Question";
+    };
+    $scope.phone = function() {
+      window.location.href = "217-369-2921";  
+    };
 })
 .controller('HomeCtrl', function($scope) {
 
