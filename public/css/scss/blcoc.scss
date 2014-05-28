@@ -180,8 +180,9 @@ footer {
 .contact{
     position:absolute;
     width:70px;
-    right:10px;
-    top:10px;
+    right:0px;
+    top:0px;
+    z-index:101;
 }
 #time, #location, #phone, #email{
    display:block;
