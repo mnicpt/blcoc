@@ -40,7 +40,7 @@ angular.module('blcoc', ['ngRoute'])
         window.location.href = "mailto:mnicpt@gmail.com?subject=Question";
     };
     $scope.phone = function() {
-      window.location.href = "217-369-2921";  
+      window.location.href = "tel:217-369-2921";  
     };
 })
 .controller('HomeCtrl', function($scope) {
