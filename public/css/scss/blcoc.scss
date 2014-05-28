@@ -188,22 +188,21 @@ footer {
     display:block;
     margin:15px;
     text-align:center;
-    color:rgb(101, 109, 55);
 }
-//.fa{
-//    &.fa-clock-o{
-//        color:$green;
-//    }
-//    &.fa-map-marker{
-//        color:$red;
-//    }
-//    &.fa-phone{
-//        color:$orange;
-//    }
-//    &.fa-envelope-o{
-//        color:$blue;
-//    }
-//}
+.fa{
+    &.fa-clock-o{
+        color:rgb(101, 109, 55);
+    }
+    &.fa-map-marker{
+        color:rgb(101, 109, 55);
+    }
+    &.fa-phone{
+        color:white;
+    }
+    &.fa-envelope-o{
+        color:white;
+    }
+}
 .sub_pages{
     header{
         background-color:white;
